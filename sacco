@@ -3,24 +3,6 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <string.h>
-/*
-This project, a Sacco Account Management System developed and done by
-1. Nakanwagi Evelyn 2018/BCS/004
-2. Natwijuka Isophel 2018/BCS/005
-3. Kambale Wesley 2018/BCS/003
-
-The system seeks to address the need for using digital banking in our community with the inception of Saccos.
-The system is can be used by the Sacco to help their clients;
-1. Open a Sacco Account, such as Savings, Current and Fixed accounts.
-2. Update their Information
-3. Make transactions such as Deposit or Withdraw
-4. Be able to view and verify the Client information
-5. Close an account of the Client
-6. View the list of Client
-
-As a digital baanking system, for safety, the system is secured with a password that only the Sacco people responsible
-for running the system can know and use.
-*/
 
 int i, j;
 //Used to exit the banking system
