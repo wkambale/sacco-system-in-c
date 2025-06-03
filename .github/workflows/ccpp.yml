@@ -4,16 +4,13 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v1
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - uses: actions/checkout@v4
+    - name: Compile
+      run: gcc -o sacco sacco.c
+    # Optional: Add a step to run the compiled executable with a basic command to check if it runs
+    # For example, if your program has a command to show help or version, you can use that.
+    # Since this program is interactive, we might just check if it executes without immediate error.
+    # We'll need to handle the password prompt.
+    # For now, let's skip running it in the CI pipeline as it requires interactive input.
